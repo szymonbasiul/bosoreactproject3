@@ -1,13 +1,13 @@
+@import "./ColorPalette.scss";
+
 .BackgroundGlow {
-	// background-color: rgba(255, 169, 73, 0.36);
 	background: radial-gradient(
 			circle at top 15% right 25%,
-			#ffa9495c 20%,
-			#ffaa4900 50%
+			$glowColor 20%,
+			$secondaryColor 50%
 		)
 		no-repeat top;
 	background-size: 55% 100%;
-	// background: linear-gradient(15deg, #ffaa4900 30%, #ffa9495c 70%);
 	background-position: right;
 	border-radius: 20px;
 	width: 100%;

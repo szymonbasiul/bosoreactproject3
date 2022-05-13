@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { Navbar } from "./app_components/Navbar";
 import { About } from "./app_components/About";
+import { Blog } from "./app_components/Blog";
 
 //TODO check best interface name practices
 
@@ -24,6 +25,7 @@ div/
 						<Navbar />
 					</nav>
 					<About />
+					<Blog />
 				</div>
 			</div>
 		</div>

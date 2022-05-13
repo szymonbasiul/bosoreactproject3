@@ -1,19 +1,19 @@
+@import "../ColorPalette.scss";
+
 $buttonFontSize: 44px;
-$buttonFontColor: #c3833c;
-$buttonBorderColor: #c3833c;
 
 .defaultButton {
 	// box styling
 	height: 100px;
 	width: 220px;
 	padding: 10px;
-	background-color: black;
+	background-color: $thirdColor;
 	// font styling
 	color: $buttonFontColor;
-	font-size: $buttonFontSize;
+	font-size: $primaryColor;
 	// border styling
 	border: solid 2px;
-	border-color: $buttonBorderColor;
+	border-color: $primaryColor;
 	border-radius: 40px;
 	&:hover {
 		cursor: pointer;
