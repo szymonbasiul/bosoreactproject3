@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,eAAe,CAAC;EACf,UAAU,EAAE,0EAIV,CACD,SAAS,CAAC,GAAG;EACd,eAAe,EAAE,QAAQ;EAEzB,mBAAmB,EAAE,KAAK;EAC1B,aAAa,EAAE,IAAI;EACnB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACZ",
+    "mappings": "AAEA,AAAA,eAAe,CAAC;EACf,UAAU,EAAE,0EAIV,CACD,SAAS,CAAC,GAAG;EACd,mBAAmB,EAAE,KAAK;EAC1B,aAAa,EAAE,IAAI;EACnB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACZ",
     "sources": [
-        "BackgroundGlow.scss"
+        "BackgroundGlow.scss",
+        "ColorPalette.scss"
     ],
     "names": [],
     "file": "BackgroundGlow.css"

@@ -3,6 +3,9 @@ import "./App.css";
 import { Navbar } from "./app_components/Navbar";
 import { About } from "./app_components/About";
 import { Blog } from "./app_components/Blog";
+import { Feedback } from "./app_components/Feedback";
+import { Projects } from "./app_components/Projects";
+import { Footer } from "./app_components/Footer";
 
 //TODO check best interface name practices
 
@@ -25,7 +28,10 @@ div/
 						<Navbar />
 					</nav>
 					<About />
+					<Projects />
 					<Blog />
+					<Feedback />
+					<Footer />
 				</div>
 			</div>
 		</div>
