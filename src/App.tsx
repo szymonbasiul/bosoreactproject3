@@ -21,9 +21,9 @@ contains main component
 div/
 	*/
 	const mainPage = (
-		<div className="MainPage">
-			<div className="Layer">
-				<div className="App">
+		<div className="mainPage">
+			<div className="layer">
+				<div className="app">
 					<nav>
 						<Navbar />
 					</nav>

@@ -4,11 +4,11 @@ import "../reusable_styles/BackgroundGlow.css";
 export function Blog() {
 	const header = (
 		<>
-			<div className="BlogSection">
-				<div className="BackgroundGlow">
-					<div className="BlogWindow">
-						<div className="BlogHeader">BoSoBlog</div>
-						<div className="TextOfBlog"></div>
+			<div className="blogSection">
+				<div className="backgroundGlow">
+					<div className="blogWindow">
+						<div className="blogHeader">BoSoBlog</div>
+						<div className="textOfBlog"></div>
 					</div>
 				</div>
 			</div>

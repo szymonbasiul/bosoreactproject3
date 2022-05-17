@@ -1,4 +1,4 @@
-.BackgroundGlow {
+.backgroundGlow {
   background: radial-gradient(circle at top 15% right 25%, #ffa9495c 20%, #89898980 50%) no-repeat top;
   background-position: right;
   border-radius: 20px;

@@ -7,7 +7,7 @@ export function Navbar() {
 			<Button buttonName={"Home"} />
 			<Button buttonName={"About"} />
 			<img
-				className="Logotype"
+				className="logotype"
 				src={ImgPicker("bosoreactprojectlogo")}
 				alt="logo"
 			/>

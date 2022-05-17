@@ -1,4 +1,4 @@
-.About {
+.about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,7 +13,7 @@
           justify-content: center;
 }
 
-.AboutContent {
+.aboutContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
