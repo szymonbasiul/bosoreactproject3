@@ -1,10 +1,10 @@
 .defaultButton {
-  height: 300%;
+  height: 100px;
   width: 220px;
   padding: 10px;
   background-color: #000000;
   color: #c3833c;
-  font-size: #c3833c;
+  font-size: 44px;
   border: solid 2px;
   border-color: #c3833c;
   border-radius: 40px;
