@@ -1,7 +1,7 @@
 @import "../ColorPalette.scss";
 
 $buttonFontSize: 44px;
-$buttonFontColor : $primaryColor;
+$buttonFontColor: $primaryColor;
 
 .defaultButton {
 	// box styling
@@ -11,7 +11,7 @@ $buttonFontColor : $primaryColor;
 	background-color: $thirdColor;
 	// font styling
 	color: $buttonFontColor;
-	font-size: $primaryColor;
+	font-size: $buttonFontSize;
 	// border styling
 	border: solid 2px;
 	border-color: $primaryColor;
