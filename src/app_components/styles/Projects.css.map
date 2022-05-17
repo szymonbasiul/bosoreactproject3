@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,aAAa,CAAC;EACV,WAAW,EAAE,MAAM;EACnB,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,IAAI;EACZ,KAAK,ECLM,OAAO;CDMrB;;AAED,AAAA,QAAQ,CAAC;EACL,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI;EACnB,MAAM,EAAE,KAAK;CAChB",
+    "sources": [
+        "Projects.scss",
+        "../../reusable_styles/ColorPalette.scss"
+    ],
+    "names": [],
+    "file": "Projects.css"
+}
