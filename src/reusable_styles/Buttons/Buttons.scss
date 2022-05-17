@@ -1,6 +1,7 @@
 @import "../ColorPalette.scss";
 
 $buttonFontSize: 44px;
+$buttonFontColor : $primaryColor;
 
 .defaultButton {
 	// box styling
@@ -15,6 +16,7 @@ $buttonFontSize: 44px;
 	border: solid 2px;
 	border-color: $primaryColor;
 	border-radius: 40px;
+
 	&:hover {
 		cursor: pointer;
 	}

@@ -1,4 +1,19 @@
-@import url(c:\Projekty\ReactBoso\bosoreact3\bosoreactproject3\src\reusable_styles\Buttons\Buttons.css);
+.defaultButton {
+  height: 300%;
+  width: 220px;
+  padding: 10px;
+  background-color: #000000;
+  color: #c3833c;
+  font-size: #c3833c;
+  border: solid 2px;
+  border-color: #c3833c;
+  border-radius: 40px;
+}
+
+.defaultButton:hover {
+  cursor: pointer;
+}
+
 /*
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
