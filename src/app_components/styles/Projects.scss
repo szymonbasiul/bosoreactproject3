@@ -1,40 +1,56 @@
 @import '../../reusable_styles/ColorPalette.scss';
 @import '../../reusable_styles/BackgroundGlow.scss';
 
-
-
-.projectsBody {
-    align-items: center;
+.projectBody {
+    margin-top: 5%;
     display: flex;
-    margin: auto;
-    color: $primaryColor;
-}
+    align-items: center;
+    flex-direction: column;
 
-.project {
-    cursor: pointer;
-    height: 200px;
-    width: 200px;
-    margin-top: 30px;
-    margin-inline: 30px;
-    height: 200px;
-    background-color: $blurWindow;
-}
+    .projectTitle {
+        width: 100%;
+        color: $primaryColor;
+        font-size: 30px;
+        text-align: center;
+    }
 
-.arrow {
-    width: 50px;
-    height: 50px;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    background-image: $glow;
-    border-radius: 20px;
-    cursor: pointer;
-    background-color: $blurWindow;
+    .projectsSlider {
+        align-items: center;
+        display: flex;
+        margin: auto;
+        color: $primaryColor;
 
-}
 
-.left {
-    transform: rotate(-90deg);
-}
+        .project {
+            cursor: pointer;
+            height: 200px;
+            width: 200px;
+            margin-top: 50px;
+            margin-inline: 50px;
+            height: 200px;
+            background-color: $blurWindow;
+            border: 1px solid $primaryColor;
+        }
 
-.right {
-    transform: rotate(90deg);
+        .arrow {
+            width: 50px;
+            height: 50px;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            background-image: $glow;
+            border-radius: 20px;
+            cursor: pointer;
+            background-color: $blurWindow;
+            border: 1px solid $primaryColor;
+
+        }
+
+        .left {
+            transform: rotate(-90deg);
+        }
+
+        .right {
+            transform: rotate(90deg);
+        }
+
+    }
 }
