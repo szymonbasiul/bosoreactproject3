@@ -1,4 +1,7 @@
 @import '../../reusable_styles/ColorPalette.scss';
+@import '../../reusable_styles/BackgroundGlow.scss';
+
+
 
 .projectsBody {
     align-items: center;
@@ -8,9 +11,30 @@
 }
 
 .project {
+    cursor: pointer;
     height: 200px;
     width: 200px;
     margin-top: 30px;
     margin-inline: 30px;
     height: 200px;
+    background-color: $blurWindow;
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-image: $glow;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: $blurWindow;
+
+}
+
+.left {
+    transform: rotate(-90deg);
+}
+
+.right {
+    transform: rotate(90deg);
 }

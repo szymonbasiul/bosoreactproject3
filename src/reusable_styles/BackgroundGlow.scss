@@ -1,14 +1,15 @@
 @import "./ColorPalette.scss";
 
+$glow: radial-gradient(circle at top 15% right 25%,
+		$glowColor 20%,
+		$secondaryColor 50%,
+	);
+
 .backgroundGlow {
-	background: radial-gradient(
-			circle at top 15% right 25%,
-			$glowColor 20%,
-			$secondaryColor 50%
-		)
-		no-repeat top;
+	background: $glow no-repeat top;
 	background-position: right;
 	border-radius: 20px;
 	width: 100%;
 	height: 100%;
+
 }
