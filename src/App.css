@@ -41,6 +41,7 @@ nav {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-top: 2%;
 }
 
 .layer {
@@ -75,5 +76,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 95%;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=App.css.map */
