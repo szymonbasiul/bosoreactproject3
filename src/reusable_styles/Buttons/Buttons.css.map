@@ -1,9 +1,10 @@
 {
     "version": 3,
-    "mappings": "AAKA,AAAA,cAAc,CAAC;EAEd,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,IAAI;EACb,gBAAgB,ECPJ,OAAO;EDSnB,KAAK,ECXS,OAAO;EDYrB,SAAS,EAXO,IAAI;EAapB,MAAM,EAAE,SAAS;EACjB,YAAY,ECfE,OAAO;EDgBrB,aAAa,EAAE,IAAI;CAKnB;;AAjBD,AAcC,cAda,AAcZ,MAAM,CAAC;EACP,MAAM,EAAE,OAAO;CACf",
+    "mappings": "AAGA,AAAA,cAAc,CAAC;EAEd,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,IAAI;EACb,gBAAgB,ECLJ,OAAO;EDOnB,KAAK,ECTS,OAAO;EDUrB,SAAS,EEAO,IAAI;EFEpB,MAAM,EAAE,SAAS;EACjB,YAAY,ECbE,OAAO;EDcrB,aAAa,EAAE,IAAI;CAKnB;;AAjBD,AAcC,cAda,AAcZ,MAAM,CAAC;EACP,MAAM,EAAE,OAAO;CACf",
     "sources": [
         "Buttons.scss",
-        "../ColorPalette.scss"
+        "../ColorPalette.scss",
+        "../FontsStyles.scss"
     ],
     "names": [],
     "file": "Buttons.css"

@@ -1,4 +1,5 @@
 @import "../../reusable_styles/ColorPalette.scss";
+@import "../../reusable_styles/FontsStyles.scss";
 
 .feedbackSection {
 	display: flex;
@@ -7,8 +8,8 @@
 	justify-self: center;
 	border-radius: 20px;
 	border: 1px solid $primaryColor;
-	width: 1000px;
-	height: 600px;
+	width: 100vh;
+	height: 50vh;
 	justify-content: center;
 
 	.feedbackWindow {
@@ -22,6 +23,7 @@
 		.feedbackHeader {
 			margin: auto;
 			color: $primaryColor;
+			font-size: $headerFontSize;
 			display: flex;
 			align-self: flex-start;
 			height: 20%;

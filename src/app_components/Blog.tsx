@@ -7,7 +7,7 @@ export function Blog() {
 			<div className="blogSection">
 				<div className="backgroundGlow">
 					<div className="blogWindow">
-						<div className="blogHeader">BoSoBlog</div>
+						<div className="blogHeader">BoSo Blog</div>
 						<div className="textOfBlog"></div>
 					</div>
 				</div>

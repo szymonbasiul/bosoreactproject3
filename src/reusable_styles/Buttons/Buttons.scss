@@ -1,7 +1,5 @@
 @import "../ColorPalette.scss";
-
-$buttonFontSize: 44px;
-$buttonFontColor: $primaryColor;
+@import "../FontsStyles.scss";
 
 .defaultButton {
 	// box styling

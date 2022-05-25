@@ -7,23 +7,13 @@
 }
 
 .projectBody {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 2% 0;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-
 .projectBody .projectTitle {
   padding: 50px;
   width: 100%;
@@ -31,18 +21,12 @@
   font-size: 52px;
   text-align: center;
 }
-
 .projectBody .projectsSlider {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
   margin: auto;
   color: #c3833c;
 }
-
 .projectBody .projectsSlider .project {
   cursor: pointer;
   height: 25vh;
@@ -51,31 +35,21 @@
   background-color: #89898980;
   border: 1px solid #c3833c;
 }
-
 .projectBody .projectsSlider .arrow {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   width: 15vh;
   height: 7vh;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   background-image: radial-gradient(circle at top 15% right 25%, #ffa9495c 20%, #89898980 50%);
   border-radius: 20px;
   cursor: pointer;
   background-color: #89898980;
   border: 1px solid #c3833c;
 }
-
 .projectBody .projectsSlider .left {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
-
 .projectBody .projectsSlider .right {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
-/*# sourceMappingURL=Projects.css.map */
