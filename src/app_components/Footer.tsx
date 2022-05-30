@@ -2,10 +2,13 @@ import "./styles/Footer.css";
 
 export function Footer() {
 	return (
-		<div className="footerSection">
+		<div className="footerBody">
 			<div className="footerIcons">
 				<div className="socialIcon">
-					<div className="fa fa-facebook"></div>
+					<img
+						alt="linkedin"
+						src="https://img.icons8.com/glyph-neue/100/000000/linkedin-circled.png"
+					/>
 				</div>
 				<div className="socialIcon">
 					<img
@@ -15,11 +18,12 @@ export function Footer() {
 				</div>
 				<div className="socialIcon">
 					<img
-						alt="whatsapp"
-						src="https://img.icons8.com/ios-filled/100/000000/whatsapp--v1.png"
+						alt="linkedin"
+						src="https://img.icons8.com/glyph-neue/100/000000/linkedin-circled.png"
 					/>
 				</div>
 			</div>
+			<div className="credits">Created by BoSo Inc.</div>
 		</div>
 	);
 }

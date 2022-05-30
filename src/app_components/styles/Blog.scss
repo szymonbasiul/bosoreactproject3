@@ -1,13 +1,24 @@
 @import "../../reusable_styles/ColorPalette.scss";
 @import "../../reusable_styles/FontsStyles.scss";
 
-.blogSection {
+.blogTitle {
+	margin: 50px auto;
+	color: $primaryColor;
 	display: flex;
-	background-color: $thirdColor;
-	margin: 100px auto;
+	align-self: flex-start;
+	height: 20%;
+	width: 90%;
+	justify-content: center;
+	align-items: center;
+	font-size: 44px;
+}
+
+.blogBody {
+	display: flex;
+	flex-direction: column;
+	margin: 2% 0;
 	justify-self: center;
 	border-radius: 20px;
-	border: 1px solid $primaryColor;
 	width: 100%;
 	height: 600px;
 	justify-content: center;
@@ -19,18 +30,8 @@
 		justify-content: center;
 		align-items: end;
 		flex-direction: column;
-
-		.blogHeader {
-			margin: auto;
-			color: $primaryColor;
-			display: flex;
-			font-size: $headerFontSize;
-			align-self: flex-start;
-			height: 20%;
-			width: 90%;
-			justify-content: center;
-			align-items: center;
-		}
+		border-radius: 20px;
+		border: 1px solid $primaryColor;
 
 		.textOfBlog {
 			display: flex;

@@ -10,12 +10,12 @@
   font-size: 44px;
 }
 
-.about {
+.aboutBody {
   display: flex;
-  margin: auto;
+  flex-direction: column;
+  margin: 2% 0;
   justify-self: center;
   border-radius: 20px;
-  border: 1px solid #c3833c;
   width: 100%;
   height: 50vh;
   justify-content: center;
@@ -26,13 +26,20 @@
   border-radius: 20px;
   width: 100%;
   height: 100%;
+  border: 1px solid #c3833c;
   background-color: #89898980;
-  justify-content: center;
+  justify-content: space-around;
 }
 .aboutContent .person {
+  filter: blur(2.5px);
   cursor: pointer;
+  margin: 50px 50px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  font-size: 36px;
+}
+.aboutContent .person:hover {
+  filter: blur(1px);
 }
 .aboutContent .person .photo {
   display: flex;

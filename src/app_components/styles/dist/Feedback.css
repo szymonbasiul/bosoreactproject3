@@ -1,23 +1,4 @@
-.feedbackSection {
-  display: flex;
-  background-color: #000000;
-  margin: 100px auto;
-  justify-self: center;
-  border-radius: 20px;
-  border: 1px solid #c3833c;
-  width: 100vh;
-  height: 50vh;
-  justify-content: center;
-}
-.feedbackSection .feedbackWindow {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: end;
-  flex-direction: column;
-}
-.feedbackSection .feedbackWindow .feedbackHeader {
+.feedbackTitle {
   margin: auto;
   color: #c3833c;
   font-size: 52px;
@@ -28,7 +9,27 @@
   justify-content: center;
   align-items: center;
 }
-.feedbackSection .feedbackWindow .feedbackCards {
+
+.feedbackBody {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 0;
+  justify-self: center;
+  width: 100%;
+  height: 50vh;
+  justify-content: center;
+}
+.feedbackBody .feedbackWindow {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 1px solid #c3833c;
+}
+.feedbackBody .feedbackWindow .feedbackCards {
   display: flex;
   margin: 20px 20px;
   border-radius: 20px;
@@ -39,21 +40,21 @@
   width: 90%;
   align-self: center;
 }
-.feedbackSection .feedbackWindow .feedbackCards .feedCard {
+.feedbackBody .feedbackWindow .feedbackCards .feedCard {
   margin: 10px;
   width: 30%;
   height: 80%;
   background-color: white;
   border-radius: 20px;
 }
-.feedbackSection .feedbackWindow .feedbackCards .feedCard .profilePhoto {
+.feedbackBody .feedbackWindow .feedbackCards .feedCard .profilePhoto {
   height: 50%;
   width: 100%;
   background-image: url("../../assets/images/bosoreactprojectlogo.png");
   background-repeat: no-repeat;
   background-position: center;
 }
-.feedbackSection .feedbackWindow .feedbackCards .feedCard .feedText {
+.feedbackBody .feedbackWindow .feedbackCards .feedCard .feedText {
   width: auto;
   height: auto;
   margin: 10px;

@@ -4,10 +4,10 @@ import "../reusable_styles/BackgroundGlow.css";
 export function Feedback() {
 	const header = (
 		<>
-			<div className="feedbackSection">
+			<div className="feedbackBody">
+				<div className="feedbackTitle">Feedback</div>
 				<div className="backgroundGlow">
 					<div className="feedbackWindow">
-						<div className="feedbackHeader">Feedback</div>
 						<div className="feedbackCards">
 							<div className="feedCard">
 								<div className="profilePhoto"></div>

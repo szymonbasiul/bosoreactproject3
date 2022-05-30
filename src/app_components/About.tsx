@@ -4,8 +4,8 @@ import "../reusable_styles/BackgroundGlow.css";
 export function About() {
 	const header = (
 		<>
-			<div className="aboutTitle">The Project Of</div>
-			<div className="about">
+			<div className="aboutBody">
+				<div className="aboutTitle">The Project Of</div>
 				<div className="backgroundGlow">
 					<div className="aboutContent">
 						<div className="person">

@@ -2,7 +2,7 @@
 @import "../../reusable_styles/FontsStyles.scss";
 
 .aboutTitle {
-	margin: auto;
+	margin: 50px auto;
 	color: $primaryColor;
 	display: flex;
 	align-self: flex-start;
@@ -13,12 +13,12 @@
 	font-size: 44px;
 }
 
-.about {
+.aboutBody {
 	display: flex;
-	margin: auto;
+	flex-direction: column;
+	margin: 2% 0;
 	justify-self: center;
 	border-radius: 20px;
-	border: 1px solid $primaryColor;
 	width: 100%;
 	height: 50vh;
 	justify-content: center;
@@ -29,6 +29,7 @@
 	border-radius: 20px;
 	width: 100%;
 	height: 100%;
+	border: 1px solid $primaryColor;
 	background-color: $secondaryColor;
 	justify-content: space-around;
 
