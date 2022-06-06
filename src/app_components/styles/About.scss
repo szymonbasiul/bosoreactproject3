@@ -33,16 +33,12 @@
 	background-color: $secondaryColor;
 	justify-content: space-around;
 
-	.person {
-		filter: blur(2.5px);
+	@mixin person {
 		cursor: pointer;
 		margin: 50px 50px;
 		display: flex;
 		flex-direction: column;
 		font-size: $textFontSize;
-		&:hover {
-			filter: blur(1px);
-		}
 
 		.photo {
 			display: flex;
@@ -58,5 +54,14 @@
 
 		.description {
 		}
+	}
+
+	.person {
+		@include person;
+	}
+
+	.personBlured {
+		filter: blur(2.5px);
+		@include person;
 	}
 }
