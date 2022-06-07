@@ -1,31 +1,44 @@
 import "./styles/About.css";
 import "../reusable_styles/BackgroundGlow.css";
-import  { FunctionComponent } from "react";
-import * as React from "react";
+import  {useState, FunctionComponent } from "react";
+
 
 interface participantsDefinition {
 	map(x: (x: string) => JSX.Element): JSX.Element[];
 	[index:number] : string
 }
 
-export const About: FunctionComponent= () => {
-	// function participantsProto (){
-	// 	this.["timi"]= false,
-	// 	this.["simon"] = false,
-	// 	this.["bogdan"] = false
-	// }
+interface activePeopleDefinition {
+[key:string]: boolean	
+}
 
-	// const participants: string[] = ["timi", "simon", "bogdan"]
+const activePeopleProto: activePeopleDefinition = {
+	"timi" : false,
+	"simon" : false,
+	"bogdan" : false
+}
+
+export const About: FunctionComponent= () => {
+
+	const [activePeople, setActivePeople] = useState(activePeopleProto)
+
 	const participants: participantsDefinition = ["timi", "simon", "bogdan"]
 
+	const personToggle = (person : string) => {
+		const tempObj = activePeopleProto;
+		tempObj[person] = true;
+		console.log(tempObj)
+	}
+	personToggle("timi")
 	const peopleComponent: JSX.Element[] = participants.map( x => {
 		return(
-			<div className="person">
-							<div className="photo"></div>
+			<div className="person" key={x}>
+							<div className="photo" onMouseEnter={()=> {console.log(x)}}></div>
 							<div className="description">Lorem ipsum dolor sit amet.</div>
 						</div>
 		)
 	})
+
 	const header = (
 		<>
 			<div className="aboutBody">
