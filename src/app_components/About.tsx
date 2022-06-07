@@ -1,41 +1,42 @@
 import "./styles/About.css";
 import "../reusable_styles/BackgroundGlow.css";
-import { useState } from "react";
-interface personDescription {
+import { useState, FunctionComponent } from "react";
+
+interface participantsDefinition {
+	map(x: (x: string) => JSX.Element): JSX.Element[];
+	[index: number]: string;
+}
+
+interface activePeopleDefinition {
 	[key: string]: boolean;
 }
 
-export function About() {
-	// blur other ones when photo is active and resize that
-	function personType(): personDescription {
-		this["timi"] = false;
-		this["bogdan"] = false;
-		this["simon"] = false;
-	}
-	const [activePerson, setActivePerson] = useState(new personType());
-	//create a state that will be represented in an object
-	//timi: false
-	//bogdan: false
-	// Simon : false
-	const changeActivePerson = (toggledPerson: string) => {
-		const tempObj = new personType();
-		tempObj[toggledPerson] = true;
-		setActivePerson(tempObj);
-		return null;
+const activePeopleProto: activePeopleDefinition = {
+	timi: false,
+	simon: false,
+	bogdan: false,
+};
+
+export const About: FunctionComponent = () => {
+	const [activePeople, setActivePeople] = useState(activePeopleProto);
+
+	const participants: participantsDefinition = ["timi", "simon", "bogdan"];
+
+	const personToggle = (person: string) => {
+		const tempObj = activePeopleProto;
+		tempObj[person] = true;
+		console.log(tempObj);
 	};
-	//changeActivePerson(people.Timi);
-	// console.log(tempObj);
-	// function that will change the written attribute into true
-	// function(attribute)
-	// const result = function(timi)        timi equals true others false
-
-	// mapping whole about content and by results creating className in each person/photo
-	const participants = ["timi", "simon", "bogdan"];
-
-	const participantsContainer = participants.map((x) => {
+	personToggle("timi");
+	const peopleComponent: JSX.Element[] = participants.map((x) => {
 		return (
-			<div className={false ? "person" : "personBlured"}>
-				<div className="photo"></div>
+			<div className="person" key={x}>
+				<div
+					className="photo"
+					onMouseEnter={() => {
+						console.log(x);
+					}}
+				></div>
 				<div className="description">Lorem ipsum dolor sit amet.</div>
 			</div>
 		);
@@ -46,11 +47,11 @@ export function About() {
 			<div className="aboutBody">
 				<div className="aboutTitle">The Project Of</div>
 				<div className="backgroundGlow">
-					<div className="aboutContent">{participantsContainer}</div>
+					<div className="aboutContent">{peopleComponent}</div>
 				</div>
 			</div>
 		</>
 	);
 
 	return header;
-}
+};
