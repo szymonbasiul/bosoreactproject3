@@ -62,6 +62,8 @@
 
 	.personBlured {
 		filter: blur(2.5px);
+		filter: grayscale(100%);
 		@include person;
+		
 	}
 }

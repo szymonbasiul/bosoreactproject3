@@ -1,56 +1,77 @@
 import "./styles/About.css";
 import "../reusable_styles/BackgroundGlow.css";
-import  {useState, FunctionComponent } from "react";
-
+import { useState, FunctionComponent } from "react";
 
 interface participantsDefinition {
 	map(x: (x: string) => JSX.Element): JSX.Element[];
-	[index:number] : string
+	[index: number]: string;
 }
 
 interface activePeopleDefinition {
-[key:string]: boolean	
-}
+	 [key: string]: boolean | any;
+} 
 
-const activePeopleProto: activePeopleDefinition = {
-	"timi" : false,
-	"simon" : false,
-	"bogdan" : false
-}
+class ActivePeopleProto {
+	"timi" = true;
+	"simon" = true;
+	"bogdan" = true;
 
-export const About: FunctionComponent= () => {
-
-	const [activePeople, setActivePeople] = useState(activePeopleProto)
-
-	const participants: participantsDefinition = ["timi", "simon", "bogdan"]
-
-	const personToggle = (person : string) => {
-		const tempObj = activePeopleProto;
-		tempObj[person] = true;
-		console.log(tempObj)
+	constructor() {
+		this["timi"] = true;
+		this["simon"] = true;
+		this["bogdan"] = true;
 	}
-	personToggle("timi")
-	const peopleComponent: JSX.Element[] = participants.map( x => {
-		return(
-			<div className="person" key={x}>
-							<div className="photo" onMouseEnter={()=> {console.log(x)}}></div>
-							<div className="description">Lorem ipsum dolor sit amet.</div>
-						</div>
-		)
-	})
+}
+
+export const About: FunctionComponent = () => {
+	const [activePeople, setActivePeople] = useState<activePeopleDefinition>(new ActivePeopleProto());
+
+	const participants: participantsDefinition = ["timi", "simon", "bogdan"];
+	
+	const turnAllPeopleFalse = ()=>{
+		let tempObj: activePeopleDefinition = new ActivePeopleProto();
+		Object.keys(tempObj).forEach((key)=>{
+			tempObj[key] = false;
+		})
+			return tempObj;
+	} 
+
+	const personToggle = (person:string ) => {
+		let tempObj: activePeopleDefinition = turnAllPeopleFalse();
+		tempObj[person] = true;
+		setActivePeople(tempObj)
+		
+	};
+
+
+	// personToggle("timi")
+	const peopleComponent: JSX.Element[] = participants.map((person) => {
+		return (
+			<div className={activePeople[person] ? "person": "personBlured"} key={person}>
+				<div
+					className="photo"
+					onMouseEnter={() => {
+						personToggle(person);
+					}}
+					onMouseLeave={()=> { 
+						setActivePeople(new ActivePeopleProto())
+					}}
+				></div>
+				<div className="description">Lorem ipsum dolor sit amet.</div>
+			</div>
+		);
+	});
 
 	const header = (
 		<>
 			<div className="aboutBody">
 				<div className="aboutTitle">The Project Of</div>
 				<div className="backgroundGlow">
-					<div className="aboutContent">
-						{peopleComponent}
-					</div>
+					<div className="aboutContent">{peopleComponent}</div>
 				</div>
 			</div>
 		</>
 	);
 
 	return header;
-}
+};
