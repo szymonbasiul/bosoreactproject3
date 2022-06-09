@@ -27,6 +27,7 @@
 .aboutContent {
 	display: flex;
 	border-radius: 20px;
+	padding: 100px;
 	width: 100%;
 	height: 100%;
 	border: 1px solid $primaryColor;
@@ -35,25 +36,38 @@
 
 	@mixin person {
 		cursor: pointer;
-		margin: 50px 50px;
+		margin: auto;
+		width: 600px;
+		height: 700px;
 		display: flex;
-		flex-direction: column;
+		justify-items: center;
+		align-items: center;
+		flex-direction: column;w
 		font-size: $textFontSize;
 
 		.photo {
 			display: flex;
 			align-content: center;
+			justify-content: center;
 			border: solid 2px;
 			border-color: $primaryColor;
 			border-radius: 20px;
-			width: 25vh;
-			height: 30vh;
+			width: 500px;
+			height: 600px;
 			background-size: cover;
 			background-image: url("../../assets/images/personImg/blondeGirl.jpg");
+			transition: 0.5s;
+			&:hover{
+				width: 520px;
+				height: 620px;
+			}
 		}
 
 		.description {
+			display: flex;
+			justify-items: center;
 		}
+		
 	}
 
 	.person {
@@ -61,9 +75,10 @@
 	}
 
 	.personBlured {
-		filter: blur(2.5px);
-		filter: grayscale(100%);
+		filter: blur(2.5px) grayscale(90%);
 		@include person;
 		
 	}
 }
+
+

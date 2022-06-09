@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Customized my scrollbar -->
+		<!-- Primary color: #c3833c;
+Secondary color: #89898980;
+Third color: #000000;
+GlowColor: #ffa9495c;
+ShadowLayer: #1d120df1; -->
+		<style>
+			html::-webkit-scrollbar {
+				border: 1px;
+				border-radius: 10px;
+				width: 30px;
+			}
+
+			html::-webkit-scrollbar-thumb {
+				border: 1px;
+				border-radius: 12px;
+				background-color: #1d120df1;
+			}
+
+			html::-webkit-scrollbar-thumb:hover {
+				cursor: grab;
+				background-color: rgba(29, 18, 13, 0.9);
+			}
+
+			html::-webkit-scrollbar-track {
+				border-radius: 12px;
+				background-color: rgba(29, 18, 13, 0.6);
+			}
+		</style>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,6 +54,7 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
 		<title>BoSoReact3</title>
+		
 	</head>
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>

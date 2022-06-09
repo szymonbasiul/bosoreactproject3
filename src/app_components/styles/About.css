@@ -40,6 +40,7 @@
   display: -ms-flexbox;
   display: flex;
   border-radius: 20px;
+  padding: 100px;
   width: 100%;
   height: 100%;
   border: 1px solid #c3833c;
@@ -50,10 +51,16 @@
 
 .aboutContent .person {
   cursor: pointer;
-  margin: 50px 50px;
+  margin: auto;
+  width: 600px;
+  height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -67,23 +74,46 @@
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: solid 2px;
   border-color: #c3833c;
   border-radius: 20px;
-  width: 25vh;
-  height: 30vh;
+  width: 500px;
+  height: 600px;
   background-size: cover;
   background-image: url("../../assets/images/personImg/blondeGirl.jpg");
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.aboutContent .personBlured {
-  -webkit-filter: blur(2.5px);
-          filter: blur(2.5px);
-  cursor: pointer;
-  margin: 50px 50px;
+.aboutContent .person .photo:hover {
+  width: 520px;
+  height: 620px;
+}
+
+.aboutContent .person .description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-items: center;
+}
+
+.aboutContent .personBlured {
+  -webkit-filter: blur(2.5px) grayscale(90%);
+          filter: blur(2.5px) grayscale(90%);
+  cursor: pointer;
+  margin: auto;
+  width: 600px;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -97,12 +127,29 @@
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: solid 2px;
   border-color: #c3833c;
   border-radius: 20px;
-  width: 25vh;
-  height: 30vh;
+  width: 500px;
+  height: 600px;
   background-size: cover;
   background-image: url("../../assets/images/personImg/blondeGirl.jpg");
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.aboutContent .personBlured .photo:hover {
+  width: 520px;
+  height: 620px;
+}
+
+.aboutContent .personBlured .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
 }
 /*# sourceMappingURL=About.css.map */
