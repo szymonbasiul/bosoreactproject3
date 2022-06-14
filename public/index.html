@@ -8,15 +8,19 @@ Third color: #000000;
 GlowColor: #ffa9495c;
 ShadowLayer: #1d120df1; -->
 		<style>
+			body {
+				overflow: overlay;
+			}
+
 			html::-webkit-scrollbar {
 				border: 1px;
 				border-radius: 10px;
-				width: 30px;
+				width: 20px;
 			}
 
 			html::-webkit-scrollbar-thumb {
 				border: 1px;
-				border-radius: 12px;
+				border-radius: 10px;
 				background-color: #1d120df1;
 			}
 
@@ -26,9 +30,10 @@ ShadowLayer: #1d120df1; -->
 			}
 
 			html::-webkit-scrollbar-track {
-				border-radius: 12px;
-				background-color: rgba(29, 18, 13, 0.6);
+				border-radius: 10px;
+				background-color: rgba(255, 255, 255, 0.6);
 			}
+			
 		</style>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
