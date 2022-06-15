@@ -65,7 +65,7 @@ export const About: FunctionComponent = () => {
 	const header = (
 		<>
 			<div className="aboutBody">
-				<div className="aboutTitle">The Project Of:::</div>
+				<div className="aboutTitle">The Project Of</div>
 				<div className="backgroundGlow">
 					<div className="aboutContent">{peopleComponent}</div>
 				</div>
