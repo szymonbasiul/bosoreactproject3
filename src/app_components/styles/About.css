@@ -52,8 +52,8 @@
 .aboutContent .person {
   cursor: pointer;
   margin: auto;
-  width: 600px;
-  height: 700px;
+  width: 14em;
+  height: 18em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,8 +80,8 @@
   border: solid 2px;
   border-color: #c3833c;
   border-radius: 20px;
-  width: 500px;
-  height: 600px;
+  width: 12em;
+  height: 14em;
   background-size: cover;
   background-image: url("../../assets/images/personImg/blondeGirl.jpg");
   -webkit-transition: 0.5s;
@@ -89,8 +89,8 @@
 }
 
 .aboutContent .person .photo:hover {
-  width: 520px;
-  height: 620px;
+  width: 13em;
+  height: 15em;
 }
 
 .aboutContent .person .description {
@@ -105,8 +105,8 @@
           filter: blur(2.5px) grayscale(90%);
   cursor: pointer;
   margin: auto;
-  width: 600px;
-  height: 700px;
+  width: 14em;
+  height: 18em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,8 +133,8 @@
   border: solid 2px;
   border-color: #c3833c;
   border-radius: 20px;
-  width: 500px;
-  height: 600px;
+  width: 12em;
+  height: 14em;
   background-size: cover;
   background-image: url("../../assets/images/personImg/blondeGirl.jpg");
   -webkit-transition: 0.5s;
@@ -142,8 +142,8 @@
 }
 
 .aboutContent .personBlured .photo:hover {
-  width: 520px;
-  height: 620px;
+  width: 13em;
+  height: 15em;
 }
 
 .aboutContent .personBlured .description {
