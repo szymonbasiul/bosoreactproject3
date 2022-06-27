@@ -12,13 +12,13 @@ interface activePeopleDefinition {
 } 
 
 class ActivePeopleProto {
-	"timi" = true;
 	"simon" = true;
+	"timi" = true;
 	"bogdan" = true;
 
 	constructor() {
-		this["timi"] = true;
 		this["simon"] = true;
+		this["timi"] = true;
 		this["bogdan"] = true;
 	}
 }
@@ -26,7 +26,7 @@ class ActivePeopleProto {
 export const About: FunctionComponent = () => {
 	const [activePeople, setActivePeople] = useState<activePeopleDefinition>(new ActivePeopleProto());
 
-	const participants: participantsDefinition = ["timi", "simon", "bogdan"];
+	const participants: participantsDefinition = ["simon","timi", "bogdan"];
 	
 	const turnAllPeopleFalse = ()=>{
 		let tempObj: activePeopleDefinition = new ActivePeopleProto();
@@ -48,15 +48,16 @@ export const About: FunctionComponent = () => {
 	const peopleComponent: JSX.Element[] = participants.map((person) => {
 		return (
 			<div className={activePeople[person] ? "person": "personBlured"} key={person}>
-				<div
-					className="photo"
+				<img
+					className="photo" src={require(`../assets/images/personImg/${person}.png`)} alt="default"
 					onMouseEnter={() => {
 						personToggle(person);
 					}}
 					onMouseLeave={()=> { 
 						setActivePeople(new ActivePeopleProto())
 					}}
-				></div>
+				>
+				</img>
 				<div className="description">Lorem ipsum dolor sit amet.</div>
 			</div>
 		);

@@ -80,16 +80,15 @@
   border: solid 2px;
   border-color: #c3833c;
   border-radius: 20px;
-  width: 6em;
+  width: 8em;
   height: 9em;
   background-size: cover;
-  background-image: url("../../assets/images/personImg/blondeGirl.jpg");
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .aboutContent .person .photo:hover {
-  width: 7em;
+  width: 9em;
   height: 10em;
 }
 
@@ -133,16 +132,15 @@
   border: solid 2px;
   border-color: #c3833c;
   border-radius: 20px;
-  width: 6em;
+  width: 8em;
   height: 9em;
   background-size: cover;
-  background-image: url("../../assets/images/personImg/blondeGirl.jpg");
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .aboutContent .personBlured .photo:hover {
-  width: 7em;
+  width: 9em;
   height: 10em;
 }
 
