@@ -58,6 +58,7 @@ export const About: FunctionComponent = () => {
 					}}
 				>
 				</img>
+				<div className="name">{person}</div>
 				<div className="description">Lorem ipsum dolor sit amet.</div>
 			</div>
 		);
